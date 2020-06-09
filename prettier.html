@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist\css\bootstrap.css">
+    <link rel="stylesheet" href="prettier.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Formatting javascript</h1>
+    </div>
+    <div class="container-textarea">
+        <textarea id="inputTextarea" class="textarea textarea-child" wrap="off">
+function HelloWorld({greeting = "hello", greeted = '"World"', silent = false, onMouseOver,}) {
+                        
+if(!greeting){return null};
+// TODO: Don't use random in render
+                                     
+let num = Math.floor (Math.random() * 1E+7).toString().replace(/\.\d+/ig, "")
+return <div className='HelloWorld' title={`You are visitor number ${ num }`} onMouseOver={onMouseOver}>
+ <strong>{ greeting.slice( 0, 1 ).toUpperCase() + greeting.slice(1).toLowerCase() }</strong>
+{greeting.endsWith(",") ? " " : <span style={{color: '\grey'}}>", "</span> }
+<em>
+ { greeted }
+</em>
+{ (silent)
+? "."
+: "!"}
+                                          
+</div>
+ ;
+                                  
+}  
+</textarea>
+<textarea id="outputTextarea" class="textarea textarea-child" wrap="off"></textarea>
+    </div>
+    <input type="submit" class="button" value="formatting" onclick="formatting()" />
+
+
+    </div>
+
+
+    <script src="prettier.js"></script>
+</body>
+
+</html>

@@ -1,2 +1,2 @@
 # formatting-javascript
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+![GitHub Image](https://github.com/MasoumeBagheri/formatting-javascript/blob/master/Images/Formatting-javascript.PNG)
